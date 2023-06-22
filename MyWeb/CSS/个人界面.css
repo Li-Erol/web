@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #417df408;
+}
+
+
+#myheader {
+    width: 100%;
+    top: 0px;
+    position: relative;
+    height: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#myheader .mylogoweb {
+    display: flex;
+
+}
+
+#myheader .mylogoweb .mylogo {
+    /* width: 30px;height: 30px;
+    background-color: #fff;
+    box-shadow: 7px 5px 5px rgba(0,0,0,.5); */
+    font-size: 40px;
+    margin-right: 10px;
+    color: #120f0fee;
+    
+}
+
+#myheader .mylogoweb .myweb_name {
+    font-style: italic;
+    font-size: 18px;
+    color: #f45641
+}

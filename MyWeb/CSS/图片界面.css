@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #417df408;
+}
+
+
+#myheader {
+    width: 100%;
+    top: 0px;
+    position: relative;
+    height: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#myheader .mylogoweb {
+    display: flex;
+
+}
+
+#myheader .mylogoweb .mylogo {
+    font-size: 30px;
+    margin-right: 15px;
+    color: #415cf4;
+
+}
+
+#myheader .mylogoweb .myweb_name {
+    font-style: italic;
+    font-size: 18px;
+    color: #f45641
+}
+
+.MyPicture {
+    position: relative;
+    /* background-color: rgb(189, 39, 39); */
+    width: 85%;
+    margin-left: 8%;
+    margin-right: 15%;
+    margin-top: 0;
+}
+.MyPicture .mylist_Picture{
+    list-style: none;
+}
+
+
+.MyPicture .mylist_Picture .Line_Picture{
+    display: flex; 
+    margin-left: 15px;
+    padding: 15px;
+    height: 300px;
+    border-radius: 15px;
+    /* background-color: rgba(0, 0, 0, 0.763); */
+    /* margin-top: 0px; */
+    margin-bottom: 10px;
+}
+
+.mylist_Picture .Line_Picture img {
+    /* width: 100%; */
+    min-width: 0;
+    max-width: 100%;
+    height: 100%;
+    background-color: #415cf4;
+    /* margin: 15px; */
+    box-shadow: 7px 5px 5px rgba(0,0,0,.7);
+    object-fit: cover;
+
+}
+.mylist_Picture .Line_Picture img:hover{
+    animation: secondone_picture 0.3s linear 0s 1;
+}
+@keyframes secondone_picture{
+    0%{
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+       transform:scale(1.1);
+    }
+    100%{
+        width:100%;height: 100%;
+    }
+}
+
+.mylist_Picture .Line_Picture a{
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.foot_novel_Picture{
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
+    color:#0036f97e;
+}
+.novel_logo_top {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #0000001b;
+    position:fixed;
+    right: 40px;
+    bottom: 25px;
+    width: 50px;height: 50px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+.novel_logo_top .toplogo {
+    text-align: center;
+    font-size: 50px;
+}

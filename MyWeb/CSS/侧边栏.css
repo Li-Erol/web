@@ -1,0 +1,202 @@
+/* .nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.8;
+}
+
+/* body {
+    position: relative;
+    min-height: 100vh;
+    width: 100px;
+    overflow: hidden;
+} */
+
+.sidebar {
+    border-radius: 0.8rem;
+    height: 600px;
+    width: 50px;
+    left: 3px;
+    z-index: 99;
+    top: 8%;
+    position: fixed;
+    background-color: #11111143;
+    padding: 6px 0px;
+    transition: all 0.3s ease;
+}
+
+.sidebar.active {
+    width: 251px;
+}
+
+.sidebar .logo_content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .logo_content .logo {
+    opacity: 1;
+}
+
+.logo_content .logo i {
+    margin-left: 14px;
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo_color {
+    color: darkorange
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: darkorange;
+    left: 50%;
+    top: 6px;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+    /* 上一行有点不清楚 */
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar ul {
+    margin-top: 33px;
+}
+
+hr {
+    color: #fc913a;
+}
+
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    margin: 0.5px;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.6s ease;
+    border-radius: 11px;
+}
+.sidebar .profile_conent .profile a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar ul li a i {
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 21px;
+    margin: 0 14px 0;
+}
+
+.sidebar.active .name {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.sidebar .name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #353866b4;
+    color: #fc913a;
+}
+
+.sidebar .profile_conent {
+    position: absolute;
+    color: #000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_conent .profile {
+    position: relative;
+    padding: 5px 6px;
+    height: 60px;
+    background-color: #0000000b;
+    border-radius: 15px;
+}
+
+.sidebar #profile_conent0:hover {
+    border-radius: 15px;
+
+    background-color: #353866b4;
+}
+
+.profile_conent .profile .profile_details {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .profile .profile_details {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.profile .profile_details img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profile .profile_details .name {
+    margin-right: 100px;
+    margin-left: 10px;
+    font-style: italic;
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 10px;
+}
+
+.profile #log_out {
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.sidebar.active .profile #log_out {
+    left: 90%;
+}

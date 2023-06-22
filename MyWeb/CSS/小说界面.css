@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #417df408;
+}
+
+
+#myheader {
+    width: 100%;
+    top: 0px;
+    position: relative;
+    height: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#myheader .mylogoweb {
+    display: flex;
+
+}
+
+#myheader .mylogoweb .mylogo {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+#myheader .mylogoweb .myweb_name {
+    font-style: italic;
+    font-size: 18px;
+    color: #f45641
+}
+
+.mynovel {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.412);
+    width: 85%;
+    margin-left: 8%;
+    margin-right: 15%;
+    margin-top: 0;
+}
+
+.mynovel .mylist .myitem {
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    /* padding: 10px;
+    height: 300px; */
+    border-radius: 15px;
+    /* background-color: rgba(0, 0, 0, 0.133); */
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.mynovel .mylist .myitem .myitem_item {
+    display: flex;
+    list-style: none;
+    margin-left: 0px;
+    padding: 10px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.037);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    width: 50%;
+}
+
+.mylist .myitem .myimg_item {
+    text-shadow :10px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 7px 5px 5px rgba(0,0,0,.5);
+}
+
+.mylist .myitem a {
+    height: 100%;
+    width: 40%;
+}
+
+li {
+    list-style: none;
+}
+
+.hir_text {
+    display: flex;
+    /* margin-left: 5px; */
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    height: 70%;
+    /* background-color: #f45641; */
+    border-radius: 15px;
+}
+
+.logo_out_novel {
+    width: 10%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+.myown_text {
+    /* margin-left: 0px; */
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    height: 30%;
+    margin-top: 5px;
+    /* background-color: black; */
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+.Navel_text {
+    width: 90%;
+    font-family: PingFangSC-Regular, HelveticaNeue-Light, Helvetica Neue Light, Microsoft YaHei, "sans-serif";
+
+}
+
+.hir_text .mytext .mytext_one {
+    padding-left: 20px;
+    /* font-size: 22px; */
+}
+
+.hir_text .mytext .mytext_two {
+    padding-left: 20px;
+}
+
+.novel_logo_top {
+    /* width: 100px;
+    height: 100px; */
+    background-color: #0000001b;
+    position:fixed;
+    right: 40px;
+    bottom: 25px;
+    width: 50px;height: 50px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.novel_logo_top .toplogo {
+    text-align: center;
+    font-size: 50px;
+}
+.foot_novel{
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
+    color:#0036f97e;
+}
+
+.mylist .myitem .myimg_item:hover{
+    animation: secondone_novel 0.3s linear 0s 1;
+}
+@keyframes secondone_novel{
+    0%{
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+       transform:scale(1.1);
+    }
+    100%{
+        width:100%;height: 100%;
+    }
+}
